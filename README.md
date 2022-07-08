@@ -1,3 +1,6 @@
+setup :
+    run npm install
+    you may need to install nodemon globally but iam not sure
 enviroment variables:
     POSTGRES_HOST = 127.0.0.1
     POSTGRES_DB = store
@@ -8,7 +11,6 @@ enviroment variables:
     BCRYPT_PASSWIRD=<BCRYPT_PASSWIRD>
     SALT_ROUNDS=10
     TOKEN_SECRET=<BCRYPT_PASSWIRD>
-
 commands : 
     migrate up : db-migrate up
     start : npm run start
@@ -30,7 +32,7 @@ Endpoints :
             bady : {uasername,password}
             return token
         [token required] GET /user => array of users
-        [token required] GET /user/id => user with this id
+        [token required] GET /user/:id => user with this id
     Orders : 
         [token required] POST /order : 
             note : user_id is decoded from the token
