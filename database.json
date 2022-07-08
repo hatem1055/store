@@ -1,0 +1,16 @@
+{
+    "dev": {
+        "driver": "pg",
+        "user": "openpg",
+        "password": "openpgpwd",
+        "host": "127.0.0.1",
+        "database": "store"
+      },
+    "test": {
+        "driver": "pg",
+        "user": "openpg",
+        "password": "openpgpwd",
+        "host": "127.0.0.1",
+        "database": "store_test"
+      }
+  }

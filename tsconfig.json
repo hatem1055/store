@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+      "target": "es5",                          
+      "module": "commonjs",                     
+      "lib": ["ES2018", "DOM"], 
+      "outDir": "./build",                        
+      "strict": true,                           
+      "noImplicitAny": true,    
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,             
+    },
+    "exclude": ["node_modules", "./build"]
+  }
