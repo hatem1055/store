@@ -23,7 +23,7 @@ it('should have an auth method',()=>{
 it('create method should return valid token',async()=>{
   const token = await store.create({username : 'test',password_hash : 'test'});
   jwt.verify(token, process.env.TOKEN_SECRET as string)
-  expect(1).toEqual(1);
+  expect(typeof(token).toLowerCase()).toEqual('string') // not authorized;
 }),
 it('create user and test geting it',async()=>{
     const token = await store.create({username : 'test',password_hash : 'test'});

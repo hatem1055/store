@@ -14,3 +14,4 @@ app.use(ordersRouter)
 app.listen(3000,()=>{
     console.log('done')
 })
+export default app

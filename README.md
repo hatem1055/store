@@ -1,16 +1,22 @@
+DB creation instruction : 
+1.create two databases [store,store_test]
+2.then run db-migrate up
+
 setup :
     run npm install
     you may need to install nodemon globally but iam not sure
+    create .env file with the following variables
+
 enviroment variables:
     POSTGRES_HOST = 127.0.0.1
     POSTGRES_DB = store
     POSTGRES_DB_TEST = store_test
-    POSTGRES_USER = <POSTGRES_USER>
-    POSTGRES_PASSWORD =  <POSTGRES_PASSWORD>
+    POSTGRES_USER = <YOUR_POSTGRES_USER>
+    POSTGRES_PASSWORD =  <YOUR_POSTGRES_PASSWORD>
     ENV=dev
     BCRYPT_PASSWIRD=<BCRYPT_PASSWIRD>
     SALT_ROUNDS=10
-    TOKEN_SECRET=<BCRYPT_PASSWIRD>
+    TOKEN_SECRET=<TOKEN_SECRET>
 commands : 
     migrate up : db-migrate up
     start : npm run start
